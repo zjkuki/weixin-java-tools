@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>icbc-java-parent</artifactId>
+    <groupId>com.yiding</groupId>
+    <version>1.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>icbc-java-pay</artifactId>
+  <name>ICBC Java Tools - PAY</name>
+  <description>中国工商银行融e联公众号Java SDK</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.yiding</groupId>
+      <artifactId>icbc-java-common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jodd</groupId>
+      <artifactId>jodd-http</artifactId>
+      <version>3.7</version>
+      <!-- 由于较新的3.8版本需要jdk8，故而此处采用较低版本 -->
+    </dependency>
+    <dependency>
+      <groupId>com.github.binarywang</groupId>
+      <artifactId>qrcode-utils</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <groupId>com.yiding.icbc</groupId>
+  <version>1.0.1</version>
+</project>
